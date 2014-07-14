@@ -7,3 +7,37 @@
 //
 
 #include "UnhingedGame.h"
+
+#include "tinyxml2.h"
+
+#include <stdlib.h>
+#include <string>
+
+using namespace std;
+
+LevelGame *CreateGameObject() {
+  return new UnhingedGame();
+}
+
+UnhingedGame::UnhingedGame() {
+  
+}
+
+UnhingedGame::~UnhingedGame() {
+  
+}
+
+bool UnhingedGame::LoadLevels() {
+  // Load from game_data.xml
+  tinyxml2::XMLDocument* pXmlDocument = new tinyxml2::XMLDocument();;
+ 
+  if(pXmlDocument->LoadFile("game_data.xml") != 0)
+  {
+    return false;
+  }
+  
+  XMLElement* pXmlTexture = pXmlDocument->FirstChildElement("levels");
+  
+  return true;
+}
+

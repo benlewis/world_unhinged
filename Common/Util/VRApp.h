@@ -42,6 +42,8 @@ using namespace OVR::Render;
 
 class LevelGame;
 
+LevelGame *CreateGameObject(); // Define this in your main app
+
 //-------------------------------------------------------------------------------------
 // ***** OculusWorldDemo Description
 

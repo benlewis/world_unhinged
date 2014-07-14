@@ -11,6 +11,7 @@
 		CE351EC91972F3CB00F3082D /* VRScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE351EC71972F3CB00F3082D /* VRScene.cpp */; };
 		CE351ECC1972F90F00F3082D /* LevelGame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE351ECA1972F90F00F3082D /* LevelGame.cpp */; };
 		CE351ECE1972FFE500F3082D /* game_data.json in Resources */ = {isa = PBXBuildFile; fileRef = CE351ECD1972FFE500F3082D /* game_data.json */; };
+		CE351ED0197398D600F3082D /* game_data.xml in Resources */ = {isa = PBXBuildFile; fileRef = CE351ECF197398D600F3082D /* game_data.xml */; };
 		CE49029F19709304000A91E8 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB59E1E1970823E0057A0E0 /* Cocoa.framework */; };
 		CE4902D31970958F000A91E8 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB59E1C1970823A0057A0E0 /* AudioToolbox.framework */; };
 		CE4902D419709593000A91E8 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB59E1A197082320057A0E0 /* OpenGL.framework */; };
@@ -39,6 +40,7 @@
 		CE351ECA1972F90F00F3082D /* LevelGame.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LevelGame.cpp; sourceTree = "<group>"; };
 		CE351ECB1972F90F00F3082D /* LevelGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelGame.h; sourceTree = "<group>"; };
 		CE351ECD1972FFE500F3082D /* game_data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = game_data.json; sourceTree = "<group>"; };
+		CE351ECF197398D600F3082D /* game_data.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = game_data.xml; sourceTree = "<group>"; };
 		CE449E1B197087E5001CACDB /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		CE449E1D197087EB001CACDB /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		CE449E1F197087EF001CACDB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -254,6 +256,7 @@
 			children = (
 				CEB59E0A197081C70057A0E0 /* Oculus.ico */,
 				CE351ECD1972FFE500F3082D /* game_data.json */,
+				CE351ECF197398D600F3082D /* game_data.xml */,
 			);
 			name = Assets;
 			path = ../Assets;
@@ -312,6 +315,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE351ECE1972FFE500F3082D /* game_data.json in Resources */,
+				CE351ED0197398D600F3082D /* game_data.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

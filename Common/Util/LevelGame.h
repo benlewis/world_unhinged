@@ -27,10 +27,12 @@ class LevelGame {
 public:
   void LoadNextLevel(Scene scene);
   Level *CurrentLevel();
+  virtual bool LoadLevels() = 0;
   
 private:
   vector<Level *>   Levels;
   int               CurrentLevelIndex;
+
   
 };
 

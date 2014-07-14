@@ -26,7 +26,11 @@ protected:
 };
 
 class UnhingedGame: public LevelGame {
-
+public:
+  UnhingedGame();
+  ~UnhingedGame();
+  
+  virtual bool LoadLevels();
 };
 
 

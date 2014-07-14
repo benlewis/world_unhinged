@@ -11,3 +11,7 @@
 Level *LevelGame::CurrentLevel() {
   return Levels[CurrentLevelIndex];
 }
+
+void LevelGame::LoadNextLevel(Scene scene) {
+  CurrentLevel()->Load(scene);
+}

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<levels>
+  <level name="Tutorial">
+    <box width="5" height="3" length="2" corners="true">
+      <face side="front" default_state="peg">
+        <cell row="0" column="0" state="clockwise" />
+      </face>
+      <face side="front_right_corner" default_state="no_spin" />
+      <face side="right" default_state="peg">
+        <cell row="1" column="0" state="no_spin" />
+      </face>
+      <face side="right_back_corner" default_state="empty" />
+      <face side="back" default_state="empty" />
+      <face side="back_left_corner" default_state="empty" />
+      <face side="left" default_state="empty" />
+      <face side="left_front_corner" default_state="empty" />
+    </box>
+    <inventory>
+      <gears count="5" />
+    </inventory>
+  </level>
+  <level name="Tutorial pt 2">
+    <box width="5" height="3" length="2" corners="true">
+      <face side="front" default_state="peg">
+        <cell row="0" column="0" state="clockwise" />
+      </face>
+      <face side="front_right_corner" default_state="no_spin" />
+      <face side="right" default_state="peg">
+        <cell row="1" column="0" state="no_spin" />
+      </face>
+      <face side="right_back_corner" default_state="no_spin" />
+      <face side="back" default_state="peg" />
+      <face side="back_left_corner" default_state="peg" />
+      <face side="left" default_state="peg" />
+      <face side="left_front_corner" default_state="peg" />
+    </box>
+    <inventory>
+      <gears count="5" />
+    </inventory>
+  </level>
+
+</levels>

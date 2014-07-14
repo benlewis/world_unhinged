@@ -66,6 +66,8 @@ BlocksCenter(0.0f, 0.0f, 0.0f)
   EyeRenderSize[0] = EyeRenderSize[1] = Sizei(0);
   
   DistortionClearBlue = false;
+  
+  Game = CreateGameObject();
 }
 
 VRApp::~VRApp()
