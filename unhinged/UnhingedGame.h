@@ -11,19 +11,8 @@
 
 #include "LevelGame.h"
 
-
-class Box {
-  // Holds Facets/Gears
-  // Might not actually be a box shape
-  
-  
-};
-
-class Room: public Level {
-protected:
-  Box *Box;
-  
-};
+#include <stdlib.h>
+#include <string>
 
 class UnhingedGame: public LevelGame {
 public:

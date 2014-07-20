@@ -682,11 +682,13 @@ void VRApp::OnIdle()
   if (LoadingState == LoadingState_DoLoad)
   {
     //PopulateScene(MainFilePath.ToCStr());
-    Game->LoadNextLevel(MainScene); // TODO: Replace with Game->LoadMenu
+    Game->LoadNextLevel(&MainScene); // TODO: Replace with Game->LoadMenu
     LoadingState = LoadingState_Finished;
     return;
   } else if (Game->CurrentLevel()->LevelComplete()) {
-    Game->LoadNextLevel(MainScene);
+    Game->LoadNextLevel(&MainScene);
+  } else {
+    Game->CurrentLevel()->Update();
   }
   
   if (HmdSettingsChanged)
@@ -744,7 +746,19 @@ void VRApp::OnIdle()
     
     pRender->BeginScene(PostProcess_None);
     
-    if (ForceZeroIpd)
+    if (false) {
+      // Only render one eye
+      pRender->SetRenderTarget(RenderTargets[Rendertarget_Left].pTex);
+      pRender->Clear();
+      
+      ovrPosef eyeRenderPose = ovrHmd_BeginEyeRender(Hmd, ovrEye_Left);
+      
+      View = CalculateViewFromPose(eyeRenderPose);
+      RenderEyeView(ovrEye_Left);
+      ovrHmd_EndEyeRender(Hmd, ovrEye_Left, eyeRenderPose, &EyeTexture[ovrEye_Left]);
+    }
+    
+    else if (ForceZeroIpd)
     {
       // Zero IPD eye rendering: draw into left eye only,
       // re-use  texture for right eye.

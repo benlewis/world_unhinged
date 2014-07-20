@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<global>
+  <facet size="0.5" />
+  <peg size="0.01" />
+  <face material="cyan_plastic" />
+  <wall texture="darkwood.jpg" />
+</global>
 <levels>
   <level name="Tutorial">
     <box width="5" height="3" length="2" corners="true">

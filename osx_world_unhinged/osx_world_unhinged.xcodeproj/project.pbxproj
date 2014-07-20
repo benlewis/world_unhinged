@@ -12,6 +12,11 @@
 		CE351ECC1972F90F00F3082D /* LevelGame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE351ECA1972F90F00F3082D /* LevelGame.cpp */; };
 		CE351ECE1972FFE500F3082D /* game_data.json in Resources */ = {isa = PBXBuildFile; fileRef = CE351ECD1972FFE500F3082D /* game_data.json */; };
 		CE351ED0197398D600F3082D /* game_data.xml in Resources */ = {isa = PBXBuildFile; fileRef = CE351ECF197398D600F3082D /* game_data.xml */; };
+		CE351ED31974EEE000F3082D /* Room.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE351ED11974EEE000F3082D /* Room.cpp */; };
+		CE351ED61974EEE800F3082D /* Box.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE351ED41974EEE800F3082D /* Box.cpp */; };
+		CE351ED91974EEF000F3082D /* Face.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE351ED71974EEF000F3082D /* Face.cpp */; };
+		CE351EDC1974EEF700F3082D /* Facet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE351EDA1974EEF700F3082D /* Facet.cpp */; };
+		CE351EDF1974EF0000F3082D /* Gear.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE351EDD1974EF0000F3082D /* Gear.cpp */; };
 		CE49029F19709304000A91E8 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB59E1E1970823E0057A0E0 /* Cocoa.framework */; };
 		CE4902D31970958F000A91E8 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB59E1C1970823A0057A0E0 /* AudioToolbox.framework */; };
 		CE4902D419709593000A91E8 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB59E1A197082320057A0E0 /* OpenGL.framework */; };
@@ -41,6 +46,16 @@
 		CE351ECB1972F90F00F3082D /* LevelGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelGame.h; sourceTree = "<group>"; };
 		CE351ECD1972FFE500F3082D /* game_data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = game_data.json; sourceTree = "<group>"; };
 		CE351ECF197398D600F3082D /* game_data.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = game_data.xml; sourceTree = "<group>"; };
+		CE351ED11974EEE000F3082D /* Room.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Room.cpp; sourceTree = "<group>"; };
+		CE351ED21974EEE000F3082D /* Room.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Room.h; sourceTree = "<group>"; };
+		CE351ED41974EEE800F3082D /* Box.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Box.cpp; sourceTree = "<group>"; };
+		CE351ED51974EEE800F3082D /* Box.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Box.h; sourceTree = "<group>"; };
+		CE351ED71974EEF000F3082D /* Face.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Face.cpp; sourceTree = "<group>"; };
+		CE351ED81974EEF000F3082D /* Face.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Face.h; sourceTree = "<group>"; };
+		CE351EDA1974EEF700F3082D /* Facet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Facet.cpp; sourceTree = "<group>"; };
+		CE351EDB1974EEF700F3082D /* Facet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Facet.h; sourceTree = "<group>"; };
+		CE351EDD1974EF0000F3082D /* Gear.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Gear.cpp; sourceTree = "<group>"; };
+		CE351EDE1974EF0000F3082D /* Gear.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Gear.h; sourceTree = "<group>"; };
 		CE449E1B197087E5001CACDB /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		CE449E1D197087EB001CACDB /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		CE449E1F197087EF001CACDB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -182,6 +197,16 @@
 			children = (
 				CE4902E6197238C9000A91E8 /* UnhingedGame.cpp */,
 				CE4902E7197238C9000A91E8 /* UnhingedGame.h */,
+				CE351ED11974EEE000F3082D /* Room.cpp */,
+				CE351ED21974EEE000F3082D /* Room.h */,
+				CE351ED41974EEE800F3082D /* Box.cpp */,
+				CE351ED51974EEE800F3082D /* Box.h */,
+				CE351ED71974EEF000F3082D /* Face.cpp */,
+				CE351ED81974EEF000F3082D /* Face.h */,
+				CE351EDA1974EEF700F3082D /* Facet.cpp */,
+				CE351EDB1974EEF700F3082D /* Facet.h */,
+				CE351EDD1974EF0000F3082D /* Gear.cpp */,
+				CE351EDE1974EF0000F3082D /* Gear.h */,
 			);
 			name = unhinged;
 			path = ../unhinged;
@@ -326,18 +351,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE351ED31974EEE000F3082D /* Room.cpp in Sources */,
 				CE351ECC1972F90F00F3082D /* LevelGame.cpp in Sources */,
 				CE4902D719709619000A91E8 /* tinyxml2.cpp in Sources */,
 				CE4902DA19709619000A91E8 /* OSX_Gamepad.cpp in Sources */,
+				CE351ED91974EEF000F3082D /* Face.cpp in Sources */,
 				CE351EC91972F3CB00F3082D /* VRScene.cpp in Sources */,
 				CE4902DB19709619000A91E8 /* OSX_Platform.mm in Sources */,
+				CE351EDC1974EEF700F3082D /* Facet.cpp in Sources */,
 				CE4902DC19709619000A91E8 /* OSX_WavPlayer.cpp in Sources */,
 				CE4902DD19709619000A91E8 /* Platform.cpp in Sources */,
 				CE4902DE19709619000A91E8 /* Render_Device.cpp in Sources */,
 				CE4902DF19709619000A91E8 /* Render_GL_Device.cpp in Sources */,
+				CE351EDF1974EF0000F3082D /* Gear.cpp in Sources */,
 				CE4902E019709619000A91E8 /* Render_LoadTextureDDS.cpp in Sources */,
 				CE4902E119709619000A91E8 /* Render_LoadTextureTGA.cpp in Sources */,
 				CE4902E219709619000A91E8 /* Render_XmlSceneLoader.cpp in Sources */,
+				CE351ED61974EEE800F3082D /* Box.cpp in Sources */,
 				CE4902E319709619000A91E8 /* Player.cpp in Sources */,
 				CE351EC81972F3CB00F3082D /* VRApp.cpp in Sources */,
 				CE4902E8197238C9000A91E8 /* UnhingedGame.cpp in Sources */,

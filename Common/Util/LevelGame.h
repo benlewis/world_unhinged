@@ -18,21 +18,24 @@ using namespace std;
 
 class Level {
 public:
-  virtual void Load(Scene scene) = 0;
+  virtual void Load(Scene *scene) = 0;
   virtual bool LevelComplete() = 0;
+  virtual void Update() = 0;
   
 };
 
 class LevelGame {
 public:
-  void LoadNextLevel(Scene scene);
+  void LoadNextLevel(Scene *scene);
   Level *CurrentLevel();
   virtual bool LoadLevels() = 0;
+  ~LevelGame();
   
-private:
+protected:
   vector<Level *>   Levels;
   int               CurrentLevelIndex;
 
+  void AddLevel(Level *level);
   
 };
 
